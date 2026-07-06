@@ -1,0 +1,19 @@
+# Mikhail Simakhov
+
+> Student who builds AI agent systems and uses them every day. A-levels in Computer Science, Physics, and Maths in Cambridge, UK, from September 2026, on an academic scholarship.
+
+Mike is interested in how people actually use AI, and how you test what a model can really do. He builds and runs his own agent systems and study tools.
+
+## Projects
+
+- [Horizon](https://msimakhov-star.github.io/#projects): an always-on autonomous agent driven over Telegram in Russian or English. It plans a task, runs the plan past a council of AI reviewers that vote, hands it to a specialist mini-agent, and reports back. Python, Claude CLI, Telegram Bot API, Linux server.
+- [Jarvis](https://msimakhov-star.github.io/#projects): a bilingual voice assistant prototype for Mac with local wake-word detection; real tasks are handed to a Claude agent. openWakeWord, OpenAI Realtime API, Claude Agent SDK, MCP.
+- [Case Dojo](https://msimakhov-star.github.io/#projects): an offline-first web app for studying business thinking, with spaced repetition, worked cases, and an optional AI coach. React, Vite, Express, Claude API.
+- [Summer Calendar](https://msimakhov-star.github.io/#projects): a personal summer tracker web app backed by plain JSON files in git. Python, vanilla JS.
+
+## Links
+
+- [Website](https://msimakhov-star.github.io/): full profile and project write-ups.
+- [LinkedIn](https://www.linkedin.com/in/mikhail-simakhov-2706123b4/): where he posts analysis of AI developments.
+- [GitHub](https://github.com/msimakhov-star): code.
+- [Instagram](https://www.instagram.com/my_daily_ai/): AI content.

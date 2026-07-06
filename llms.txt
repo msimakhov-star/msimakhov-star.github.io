@@ -6,8 +6,7 @@ Mike is interested in how people actually use AI, and how you test what a model 
 
 ## Projects
 
-- [Horizon](https://msimakhov-star.github.io/#projects): an always-on autonomous agent driven over Telegram in Russian or English. It plans a task, runs the plan past a council of AI reviewers that vote, hands it to a specialist mini-agent, and reports back. Python, Claude CLI, Telegram Bot API, Linux server.
-- [Jarvis](https://msimakhov-star.github.io/#projects): a bilingual voice assistant prototype for Mac with local wake-word detection; real tasks are handed to a Claude agent. openWakeWord, OpenAI Realtime API, Claude Agent SDK, MCP.
+- [Horizon](https://msimakhov-star.github.io/#projects): an always-on autonomous agent driven over Telegram in Russian or English. It plans a task, a council of AI reviewers votes on the plan, a specialist agent does the work, and it reports back. Python, Claude CLI, Telegram Bot API, Linux server.
 - [Case Dojo](https://msimakhov-star.github.io/#projects): an offline-first web app for studying business thinking, with spaced repetition, worked cases, and an optional AI coach. React, Vite, Express, Claude API.
 - [Summer Calendar](https://msimakhov-star.github.io/#projects): a personal summer tracker web app backed by plain JSON files in git. Python, vanilla JS.
 
@@ -16,4 +15,4 @@ Mike is interested in how people actually use AI, and how you test what a model 
 - [Website](https://msimakhov-star.github.io/): full profile and project write-ups.
 - [LinkedIn](https://www.linkedin.com/in/mikhail-simakhov-2706123b4/): where he posts analysis of AI developments.
 - [GitHub](https://github.com/msimakhov-star): code.
-- [Instagram](https://www.instagram.com/my_daily_ai/): AI content.
+- [Instagram](https://www.instagram.com/my_daily_ai/): short-form AI content.

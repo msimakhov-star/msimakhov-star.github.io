@@ -33,7 +33,7 @@
 <link rel="icon" href="/assets/favicon-32.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="preload" as="image" href="/assets/headshot.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/headshot.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">
 {
@@ -114,7 +114,7 @@
     </div>
   </div>
   <div class="hero-photo">
-    <img src="/assets/headshot.webp" alt="Mikhail Simakhov" width="360" height="360">
+    <img src="/assets/headshot.webp" alt="Mikhail Simakhov" width="360" height="360" fetchpriority="high">
   </div>
 </section>
 
@@ -194,7 +194,7 @@
 
       <article class="card pcard">
         <div class="pimg pimg-shot">
-          <img src="/assets/summercal.webp" alt="Summer Calendar month view: a June grid where each day shows coloured dots for planned focus areas" width="1400" height="865" loading="lazy">
+          <img src="/assets/summercal.webp" alt="Summer Calendar month view: a June grid where each day shows coloured dots for planned focus areas" width="1400" height="865" loading="lazy" decoding="async">
         </div>
         <div class="pbody">
           <p class="label">Personal tracker</p>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <!-- Note: X-Frame-Options / CSP frame-ancestors would block iframe embedding (clickjacking),
      but they only work as HTTP response headers, which GitHub Pages cannot set, and
@@ -25,20 +25,38 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Mikhail Simakhov, student building AI agent systems">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" as="image" href="/assets/headshot.webp" type="image/webp">
 <link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Mikhail Simakhov",
-  "alternateName": "Mike Simakhov",
-  "url": "https://msimakhov-star.github.io/",
-  "sameAs": [
-    "https://www.linkedin.com/in/mikhail-simakhov-2706123b4/",
-    "https://github.com/msimakhov-star",
-    "https://www.instagram.com/mikgpt/"
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://msimakhov-star.github.io/#person",
+      "name": "Mikhail Simakhov",
+      "alternateName": "Mike Simakhov",
+      "url": "https://msimakhov-star.github.io/",
+      "jobTitle": "Student",
+      "description": "Student who builds AI agent systems.",
+      "knowsAbout": ["Artificial intelligence", "AI agents", "LLM evaluation", "Software development"],
+      "sameAs": [
+        "https://www.linkedin.com/in/mikhail-simakhov-2706123b4/",
+        "https://github.com/msimakhov-star",
+        "https://www.instagram.com/mikgpt/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://msimakhov-star.github.io/#website",
+      "url": "https://msimakhov-star.github.io/",
+      "name": "Mikhail Simakhov",
+      "author": { "@id": "https://msimakhov-star.github.io/#person" }
+    }
   ]
 }
 </script>

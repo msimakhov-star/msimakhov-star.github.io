@@ -429,6 +429,20 @@ p.centered-row { margin-bottom: 0; }
 .sicon svg { display: inline-block; }
 .scard:hover .sicon { color: var(--accent); transform: scale(1.08); }
 
+/* ---------- 404 ---------- */
+
+.notfound {
+  max-width: 40rem;
+  margin: 0 auto;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+}
+.notfound h1 { margin-bottom: 1.25rem; }
+.notfound .lead { margin-bottom: 2rem; }
+
 /* ---------- footer ---------- */
 
 footer { border-top: 1px solid var(--line); }

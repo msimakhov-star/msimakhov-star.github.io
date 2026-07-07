@@ -15,4 +15,4 @@ Mike is interested in how people actually use AI, and how you test what a model 
 - [Website](https://msimakhov-star.github.io/): full profile and project write-ups.
 - [LinkedIn](https://www.linkedin.com/in/mikhail-simakhov-2706123b4/): where he posts analysis of AI developments.
 - [GitHub](https://github.com/msimakhov-star): code.
-- [Instagram](https://www.instagram.com/my_daily_ai/): short-form AI content.
+- [Instagram](https://www.instagram.com/mikgpt/): short-form AI content.

@@ -476,3 +476,42 @@ footer { border-top: 1px solid var(--line); }
 .foot p { font-size: 0.875rem; color: var(--muted); margin: 0; }
 .social-compact { margin: 0; }
 .social-compact a { width: 44px; height: 44px; }
+
+/* ---------- newsletter page ---------- */
+
+.nl-hero { padding-top: 2rem; }
+.nl-face {
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  margin-bottom: 1rem;
+}
+.nl-form {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1.75rem auto 0.75rem;
+  max-width: 30rem;
+}
+.nl-form input[type="email"] {
+  flex: 1 1 14rem;
+  min-width: 0;
+  padding: 0.85rem 1.1rem;
+  font: inherit;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.nl-form input[type="email"]::placeholder { color: var(--muted); }
+.nl-form .btn { flex: 0 0 auto; }
+.nl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+.nlcard { padding: 1.5rem; }
+.nlcard h3 { margin: 0 0 0.5rem; }
+.nlcard p { margin: 0; color: var(--muted); }

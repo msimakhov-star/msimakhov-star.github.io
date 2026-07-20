@@ -141,6 +141,7 @@ a { color: var(--accent); text-decoration: none; }
 }
 .topnav a { color: var(--muted); font-weight: 500; font-size: 0.95rem; }
 .topnav a:hover { color: var(--ink); }
+.topnav a.active { color: var(--ink); font-weight: 700; }
 @media (max-width: 47rem) {
   .topnav { display: none; }
   .bar > .btn { margin-left: auto; }

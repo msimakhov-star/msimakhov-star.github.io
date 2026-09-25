@@ -19,13 +19,16 @@ Mike is interested in how people actually use AI, and how you test what a model 
 
 ## Tools
 
-- [Horizon](https://msimakhov-star.github.io/#tools): an always-on autonomous agent driven over Telegram in Russian or English. It plans a task, a council of AI reviewers votes on the plan, a specialist agent does the work, and it reports back. Python, Claude CLI, Telegram Bot API, Linux server.
-- [Case Dojo](https://msimakhov-star.github.io/#tools): an offline-first web app for studying business thinking, with spaced repetition, worked cases, and an optional AI coach. React, Vite, Express, Claude API.
-- [Summer Calendar](https://msimakhov-star.github.io/#tools): the tracker web app for his summer 2026 plan, backed by plain JSON files in git. Python, vanilla JS.
+- [Horizon](https://msimakhov-star.github.io/projects/#tools): an always-on autonomous agent driven over Telegram in Russian or English. It plans a task, a council of AI reviewers votes on the plan, a specialist agent does the work, and it reports back. Python, Claude CLI, Telegram Bot API, Linux server.
+- [Case Dojo](https://msimakhov-star.github.io/projects/#tools): an offline-first web app for studying business thinking, with spaced repetition, worked cases, and an optional AI coach. React, Vite, Express, Claude API.
+- [Summer Calendar](https://msimakhov-star.github.io/projects/#tools): the tracker web app for his summer 2026 plan, backed by plain JSON files in git. Python, vanilla JS.
 
 ## Links
 
-- [Website](https://msimakhov-star.github.io/): full profile and project write-ups.
+- [Website](https://msimakhov-star.github.io/): home.
+- [Projects](https://msimakhov-star.github.io/projects/): hackathon builds, tools and small builds.
+- [Research](https://msimakhov-star.github.io/research/): experiments on how language models are tested.
+- [Now](https://msimakhov-star.github.io/now/): what he did in September 2026.
 - [LinkedIn](https://www.linkedin.com/in/mikhail-simakhov-2706123b4/): where he posts analysis of AI developments.
 - [GitHub](https://github.com/msimakhov-star): code.
 - [Instagram](https://www.instagram.com/mikgpt/): short-form AI content.

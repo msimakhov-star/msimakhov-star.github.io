@@ -143,8 +143,11 @@ a { color: var(--accent); text-decoration: none; }
 .topnav a:hover { color: var(--ink); }
 .topnav a.active { color: var(--ink); font-weight: 700; }
 @media (max-width: 47rem) {
-  .topnav { display: none; }
+  .bar { flex-wrap: wrap; row-gap: 0.25rem; }
   .bar > .btn { margin-left: auto; }
+  .topbar { position: static; }
+  .topnav { order: 3; width: 100%; margin-left: 0; flex-wrap: wrap; gap: 0 1.1rem; }
+  .topnav a { white-space: nowrap; padding: 0.5rem 0; }
 }
 @media (max-width: 30rem) {
   .brand span { display: none; }
@@ -520,4 +523,6 @@ footer { border-top: 1px solid var(--line); }
 .nlcard { padding: 1.5rem; }
 .nlcard h3 { margin: 0 0 0.5rem; }
 .nlcard p { margin: 0; color: var(--muted); }
+.nlcard p.card-links { margin-top: 0.9rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.project-grid.single { max-width: 36rem; margin-left: auto; margin-right: auto; }
 .nlcard p.label { color: var(--accent); margin-bottom: 0.35rem; }

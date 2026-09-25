@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Projects · Mikhail Simakhov</title>
+<meta name="description" content="Both projects have public repositories. I build with Claude Code, an AI coding tool that writes the code at my direction.">
+<link rel="canonical" href="https://msimakhov-star.github.io/projects/">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F2EF">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#17130F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projects by Mikhail Simakhov">
+<meta property="og:description" content="Both projects have public repositories. I build with Claude Code, an AI coding tool that writes the code at my direction.">
+<meta property="og:url" content="https://msimakhov-star.github.io/projects/">
+<meta property="og:site_name" content="Mikhail Simakhov">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://msimakhov-star.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Mikhail Simakhov">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="icon" href="/assets/favicon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#top">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap-wide bar">
+    <a class="brand" href="/" aria-label="Mikhail Simakhov, home">
+      <img src="/assets/headshot.webp" alt="" width="36" height="36">
+      <span>Mikhail Simakhov</span>
+    </a>
+    <nav class="topnav" aria-label="Pages">
+      <a href="/">Home</a>
+      <a href="/projects/" class="active" aria-current="page">Projects</a>
+      <a href="/research/">Research</a>
+      <a href="/now/">Now</a>
+      <a href="/newsletter/">Newsletter</a>
+      <a href="/about/">About</a>
+    </nav>
+    <a class="btn btn-accent" href="https://www.instagram.com/mikgpt/" rel="noopener">Check out my Instagram</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="band centered" id="hackathons">
+  <div class="wrap-wide">
+    <p class="kicker">Hackathons</p>
+    <h1>Two one-day hackathon builds.</h1>
+    <p class="sub">Both projects have public repositories. I build with Claude Code, an AI coding tool that writes the code at my direction.</p>
+    <div class="project-grid">
+      <article class="card pcard" id="opendoor">
+        <div class="pimg" aria-hidden="true">
+          <svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg">
+            <g class="d-node"><rect x="24" y="30" width="130" height="44" rx="10"/><text x="89" y="56">surgery page</text></g>
+            <path class="d-arrow" d="M154 52h30"/>
+            <g class="d-node"><rect x="188" y="30" width="148" height="44" rx="10"/><text x="262" y="56">reader agent</text></g>
+            <path class="d-arrow" d="M262 74v20"/>
+            <g class="d-node d-main"><rect x="188" y="94" width="148" height="44" rx="10"/><text x="262" y="112">quote check</text><text x="262" y="128">word for word</text></g>
+            <path class="d-arrow" d="M188 116h-30"/>
+            <g class="d-node"><rect x="24" y="94" width="130" height="44" rx="10"/><text x="89" y="112">defence agent</text><text x="89" y="128">must agree</text></g>
+            <path class="d-arrow" d="M89 138v14"/>
+            <g class="d-node"><rect x="24" y="152" width="130" height="40" rx="10"/><text x="89" y="176">red amber green</text></g>
+          </svg>
+        </div>
+        <div class="pbody">
+          <p class="label">{Tech: Europe} Agentic AI Hack &middot; 19 Sep 2026</p>
+          <h3>Open Door</h3>
+          <p>Open Door is an agent that reads GP surgery registration pages across London and maps which surgeries ask new patients for documents that nhs.uk says are not needed. It quotes the surgery's own sentence only after code confirms the sentence is word for word on the page, and a separate defence agent must agree before a page stays red. One all-London run took 382 seconds, found 1,156 practices, loaded 877 pages, and marked 68 red. All verdicts are AI readings of website wording, with no human review. The interface shows a drafted letter only for red surgeries and a person decides whether to send it without anything being sent automatically. It replays offline from frozen runs with no API keys. The live pipeline has not been verified again.</p>
+          <p class="stack">Python &middot; Modal &middot; Playwright &middot; Pydantic AI &middot; Gemini &middot; FastAPI &middot; Leaflet</p>
+          <p><a class="quiet-link accent" href="https://github.com/msimakhov-star/opendoor" rel="noopener">Code on GitHub &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card pcard" id="skopos">
+        <div class="pimg pimg-shot">
+          <img src="/assets/skopos.webp" alt="Skopos point cloud view: a room rebuilt as coloured dots, with a grid floor" width="1400" height="700" loading="lazy" decoding="async">
+        </div>
+        <div class="pbody">
+          <p class="label">Worlds London &middot; 12 Sep 2026 &middot; built with a team</p>
+          <h3>Skopos</h3>
+          <p>Skopos is a prototype of a pre-deployment readiness check for home robots. I built it with a team in one day at the Worlds London hackathon. The simulated half changes a description of a room in many ways, an agent tries one task with different strategies, and it shows a readiness score from 0 to 100. The photo half takes a phone photo through a depth model into a point cloud and a floor map where you can click to plan a route. There is no robot, no physics and no trained policy, the metrics are labelled placeholder, the map is plausible not measured, and it runs with no API keys. Without API keys, the simulated half uses a built-in demo room instead of your room.</p>
+          <p class="stack">Python &middot; FastAPI &middot; NumPy &middot; ONNX Runtime &middot; Depth Anything V2 &middot; LinUCB &middot; A* &middot; vanilla JS</p>
+          <p><a class="quiet-link accent" href="https://github.com/msimakhov-star/skopos-demo" rel="noopener">Code on GitHub &rarr;</a></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band centered tinted" id="tools">
+  <div class="wrap-wide">
+    <p class="kicker">Tools</p>
+    <h2>I build my own tools.</h2>
+    <p class="sub">Agent systems and study tools.</p>
+    <div class="project-grid">
+
+      <article class="card pcard">
+        <div class="pimg" aria-hidden="true">
+          <svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg">
+            <g class="d-node"><rect x="24" y="30" width="130" height="44" rx="10"/><text x="89" y="56">Telegram msg</text></g>
+            <path class="d-arrow" d="M89 74v20"/>
+            <g class="d-node d-main"><rect x="24" y="94" width="130" height="44" rx="10"/><text x="89" y="120">Horizon</text></g>
+            <path class="d-arrow" d="M154 116h30"/>
+            <g class="d-node"><rect x="188" y="94" width="148" height="44" rx="10"/><text x="262" y="112">AI council</text><text x="262" y="128">reviews + votes</text></g>
+            <path class="d-arrow" d="M262 138v14"/>
+            <g class="d-node"><rect x="188" y="152" width="148" height="40" rx="10"/><text x="262" y="176">specialist agent</text></g>
+          </svg>
+        </div>
+        <div class="pbody">
+          <p class="label">Agent system</p>
+          <h3>Horizon</h3>
+          <p>An always-on agent I message on Telegram, in Russian or English. It plans the task, a council of AI reviewers votes on the plan, a specialist agent does the work, and it reports back from its own Linux server. It keeps working while I sleep.</p>
+          <p class="stack">Python &middot; Claude CLI &middot; Telegram Bot API &middot; Linux VPS</p>
+        </div>
+      </article>
+
+      <article class="card pcard">
+        <div class="pimg" aria-hidden="true">
+          <svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg">
+            <g class="d-node"><rect x="24" y="30" width="150" height="44" rx="10"/><text x="99" y="48">flashcards</text><text x="99" y="64">spaced repetition</text></g>
+            <path class="d-arrow" d="M174 52h30"/>
+            <g class="d-node"><rect x="208" y="30" width="128" height="44" rx="10"/><text x="272" y="48">teach-back</text><text x="272" y="64">your own words</text></g>
+            <path class="d-arrow" d="M99 74v20"/>
+            <g class="d-node"><rect x="24" y="94" width="150" height="44" rx="10"/><text x="99" y="112">worked cases</text><text x="99" y="128">+ simulators</text></g>
+            <path class="d-arrow" d="M174 116h30"/>
+            <g class="d-node d-main"><rect x="208" y="94" width="128" height="44" rx="10"/><text x="272" y="112">AI coach</text><text x="272" y="128">optional</text></g>
+          </svg>
+        </div>
+        <div class="pbody">
+          <p class="label">Study tool</p>
+          <h3>Case Dojo</h3>
+          <p>A web app I built to study business thinking: spaced-repetition flashcards, worked cases, and a teach-back mode where I explain a framework in my own words and grade myself. It runs offline; add an API key and an AI coach starts interviewing you on fresh cases.</p>
+          <p class="stack">React &middot; Vite &middot; SM-2 &middot; Express &middot; Claude API</p>
+        </div>
+      </article>
+
+      <article class="card pcard">
+        <div class="pimg pimg-shot">
+          <img src="/assets/summercal.webp" alt="Summer Calendar month view: a June grid where each day shows coloured dots for planned focus areas" width="1400" height="865" loading="lazy" decoding="async">
+        </div>
+        <div class="pbody">
+          <p class="label">Personal tracker</p>
+          <h3>Summer Calendar</h3>
+          <p>The tracker for my summer 2026 plan used a rotating day schedule, weekly checklists, and streaks. Data was plain JSON files in a git repo, so nothing depended on someone else's cloud. It started at login and showed today's plan first thing in the morning.</p>
+          <p class="stack">Python &middot; vanilla JS &middot; JSON + git &middot; launchd</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="band centered" id="small-builds">
+  <div class="wrap-wide">
+    <p class="kicker">Small builds</p>
+    <h2>Small one-day builds.</h2>
+    <p class="sub">They are still only on my laptop, so there are no links.</p>
+    <div class="nl-grid">
+      <article class="card nlcard">
+        <p class="label">One-day prototype &middot; 24 Aug 2026 &middot; local</p>
+        <h3>Turns</h3>
+        <p>This single-file browser grid puzzle has eight levels. You collect every coin in the fewest straight-line segments. A breadth-first search inside the page proves the minimum, shown as par. A generator pre-made 365 solver-verified daily boards. They are not wired into the game yet.</p>
+      </article>
+      <article class="card nlcard">
+        <p class="label">One-day build &middot; 18 Jul 2026 &middot; local</p>
+        <h3>PromptCloak</h3>
+        <p>PromptCloak is a single-file offline browser tool. It swaps emails, phone numbers, card numbers, API keys, names and IDs in a prompt for placeholders, then restores them in the AI's reply. The tool makes no network calls and keeps the mapping in memory only. Detection uses heuristic regex, so it can miss things.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap-wide foot">
+    <p>&copy; 2026 Mikhail Simakhov &middot; No cookies, no tracking. &middot; <a href="/resources/">Resources</a></p>
+    <ul class="social social-compact" aria-label="Profiles">
+      <li><a href="https://www.linkedin.com/in/mikhail-simakhov-2706123b4/" aria-label="LinkedIn" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-7.9c0-1.88-.03-4.3-2.62-4.3-2.62 0-3.02 2.05-3.02 4.17V23H8V8z"/></svg>
+      </a></li>
+      <li><a href="https://github.com/msimakhov-star" aria-label="GitHub" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.73.81 1.18 1.83 1.18 3.09 0 4.41-2.7 5.38-5.26 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.67.8.55A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+      </a></li>
+      <li><a href="https://www.instagram.com/mikgpt/" aria-label="Instagram" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.35" fill="currentColor"/></svg>
+      </a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

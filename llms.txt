@@ -1,14 +1,27 @@
 # Mikhail Simakhov
 
-> Student who builds AI agent systems and uses them every day. A-levels in Computer Science, Physics, and Maths in Cambridge, UK, from September 2026, on an academic scholarship.
+> Mike is a student who builds AI agent systems and small experiments on how language models are tested. Since 1 September 2026 he has studied A-levels in Computer Science, Physics and Maths in Cambridge, UK, on an academic scholarship.
 
-Mike is interested in how people actually use AI, and how you test what a model can really do. He builds and runs his own agent systems and study tools.
+Mike is interested in how people actually use AI, and how you test what a model can really do. Mike builds with Claude Code, an AI coding tool, and it writes the code at his direction. His paper drafts are unreviewed and not published.
 
-## Projects
+## New
 
-- [Horizon](https://msimakhov-star.github.io/#projects): an always-on autonomous agent driven over Telegram in Russian or English. It plans a task, a council of AI reviewers votes on the plan, a specialist agent does the work, and it reports back. Python, Claude CLI, Telegram Bot API, Linux server.
-- [Case Dojo](https://msimakhov-star.github.io/#projects): an offline-first web app for studying business thinking, with spaced repetition, worked cases, and an optional AI coach. React, Vite, Express, Claude API.
-- [Summer Calendar](https://msimakhov-star.github.io/#projects): a personal summer tracker web app backed by plain JSON files in git. Python, vanilla JS.
+- [Open Door](https://github.com/msimakhov-star/opendoor): public repo. Open Door was built at the {Tech: Europe} Agentic AI Hack in London on 19 Sep 2026. It is an agent that reads London GP registration pages and flags the ones asking new patients for documents nhs.uk says are not needed. All verdicts are AI readings of website wording, with no human review.
+- [Skopos](https://github.com/msimakhov-star/skopos-demo): public repo. Skopos is a one-day hackathon prototype built with a team at Worlds London on 12 Sep 2026. It is a readiness check for home robots. There is no robot, no physics and no trained policy, the metrics are labelled placeholder, and the room map is plausible, not measured.
+- [Shutdown-framing](https://github.com/msimakhov-star/shutdown-framing): research, public repo. A dependency-free Python harness for shutdown-resistance experiments on language models comes with a three-part pre-flight screen that includes a comprehension check, a behavioural floor and a custodial control to say whether a model can give a readable result at all. Six small open models ran locally on his laptop. None passed the whole screen, so no framing effect is claimed.
+
+## Experiments (local, no public repo)
+
+- JudgeCheck: JudgeCheck is a single-file Python harness that uses only the standard library. It asks a judge model to compare every answer pair twice, with A and B swapped, to measure position, length and label effects when an LLM is used as a judge. It was a small pilot on 7 local models. Self-preference is not measured.
+- RU-EN Drift: Small local models graded 60 synthetic, AI-generated Russian essays under English instructions and under Russian instructions. Adding a confident or an uncertain sentence to an essay lowered its score. There was no consistent language effect. The language and framing interaction he first expected did not replicate and was retracted. A second arm, 216 twinned English and Russian math problems, has only been run on mock data and has no result.
+- Turns: Turns is a single-file browser grid puzzle made as a one-day prototype.
+- PromptCloak: PromptCloak is a single-file offline browser tool that swaps private details in a prompt for placeholders. Its detection is heuristic, so it can miss things.
+
+## Tools
+
+- [Horizon](https://msimakhov-star.github.io/#tools): an always-on autonomous agent driven over Telegram in Russian or English. It plans a task, a council of AI reviewers votes on the plan, a specialist agent does the work, and it reports back. Python, Claude CLI, Telegram Bot API, Linux server.
+- [Case Dojo](https://msimakhov-star.github.io/#tools): an offline-first web app for studying business thinking, with spaced repetition, worked cases, and an optional AI coach. React, Vite, Express, Claude API.
+- [Summer Calendar](https://msimakhov-star.github.io/#tools): the tracker web app for his summer 2026 plan, backed by plain JSON files in git. Python, vanilla JS.
 
 ## Links
 

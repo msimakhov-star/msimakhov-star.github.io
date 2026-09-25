@@ -1,4 +1,4 @@
-/* Mikhail Simakhov — personal site. Plain CSS, no framework. */
+/* Mikhail Simakhov, personal site. Plain CSS, no framework. */
 
 :root {
   color-scheme: light dark;
@@ -297,6 +297,10 @@ p.label { margin: 0; }
 .centered-row { justify-content: center; margin-top: 0.5rem; }
 p.centered-row { margin-bottom: 0; }
 
+.now { list-style: none; padding: 0; margin: 2rem 0 0; }
+.now li { border-top: 1px solid var(--line); padding: 1rem 0; }
+.now p { margin: 0.25rem 0 0; color: var(--muted); }
+
 .fineprint {
   color: var(--muted);
   font-size: 0.875rem;
@@ -516,3 +520,4 @@ footer { border-top: 1px solid var(--line); }
 .nlcard { padding: 1.5rem; }
 .nlcard h3 { margin: 0 0 0.5rem; }
 .nlcard p { margin: 0; color: var(--muted); }
+.nlcard p.label { color: var(--accent); margin-bottom: 0.35rem; }

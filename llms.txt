@@ -2,13 +2,18 @@
 
 > Mike is a student who builds AI agent systems and small experiments on how language models are tested. Since 1 September 2026 he has studied A-levels in Computer Science, Physics and Maths in Cambridge, UK, on an academic scholarship.
 
-Mike is interested in how people actually use AI, and how you test what a model can really do. Mike builds with Claude Code, an AI coding tool, and it writes the code at his direction. His paper drafts are unreviewed and not published.
+Mike is interested in how people actually use AI, and how you test what a model can really do. Mike builds with Claude Code, an AI coding tool, and it writes the code at his direction. One of Mike's papers is under review at a peer-reviewed conference, and the other is an unreviewed draft.
 
 ## New
 
 - [Open Door](https://github.com/msimakhov-star/opendoor): public repo. Open Door was built at the {Tech: Europe} Agentic AI Hack in London on 19 Sep 2026. It is an agent that reads London GP registration pages and flags the ones asking new patients for documents nhs.uk says are not needed. All verdicts are AI readings of website wording, with no human review.
 - [Skopos](https://github.com/msimakhov-star/skopos-demo): public repo. Skopos is a one-day hackathon prototype built with a team at Worlds London on 12 Sep 2026. It is a readiness check for home robots. There is no robot, no physics and no trained policy, the metrics are labelled placeholder, and the room map is plausible, not measured.
 - [Shutdown-framing](https://github.com/msimakhov-star/shutdown-framing): research, public repo. A dependency-free Python harness for shutdown-resistance experiments on language models comes with a three-part pre-flight screen that includes a comprehension check, a behavioural floor and a custodial control to say whether a model can give a readable result at all. Six small open models ran locally on his laptop. None passed the whole screen, so no framing effect is claimed.
+
+## Papers
+
+- A pre-flight screen for shutdown-resistance evaluations (under review at a peer-reviewed ML conference, decision December 2026): The paper proposes a three-part check to run before a shutdown-resistance experiment, made of a comprehension check, a behavioural floor and a custodial control. It was tested on six small open models from five model families, run locally, with 4,800 trials and 594 comprehension probes. No model passed the whole screen, so the thresholds are not calibrated yet. The paper does not claim a framing effect in either direction. The starting idea is Mike's. AI assistants proposed the testable design, the thresholds and the three-part screen, AI coding tools wrote and ran the harness and did the analysis, and an AI language model drafted the text.
+- Manipulation-Check Reporting in LLM Shutdown-Resistance Evaluations: A Systematic Review (draft): This draft reviews 19 publicly posted shutdown-resistance evaluations of language models from January 2023 to August 2026. None of the 19 reports a formal comprehension check, and none reports a null result. The coding was done by AI language models and has not been checked by a person yet, and the text was drafted by an AI language model. The work is not submitted and not published.
 
 ## Experiments (local, no public repo)
 
@@ -27,7 +32,7 @@ Mike is interested in how people actually use AI, and how you test what a model 
 
 - [Website](https://msimakhov-star.github.io/): home.
 - [Projects](https://msimakhov-star.github.io/projects/): hackathon builds, tools and small builds.
-- [Research](https://msimakhov-star.github.io/research/): experiments on how language models are tested.
+- [Research](https://msimakhov-star.github.io/research/): papers and experiments on how language models are tested.
 - [Now](https://msimakhov-star.github.io/now/): what he did in September 2026.
 - [LinkedIn](https://www.linkedin.com/in/mikhail-simakhov-2706123b4/): where he posts analysis of AI developments.
 - [GitHub](https://github.com/msimakhov-star): code.

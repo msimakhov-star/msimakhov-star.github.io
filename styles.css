@@ -523,6 +523,6 @@ footer { border-top: 1px solid var(--line); }
 .nlcard { padding: 1.5rem; }
 .nlcard h3 { margin: 0 0 0.5rem; }
 .nlcard p { margin: 0; color: var(--muted); }
-.nlcard p.card-links { margin-top: 0.9rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+p.card-links { margin-top: 0.9rem; display: flex; gap: 1rem; flex-wrap: wrap; }
 .project-grid.single { max-width: 36rem; margin-left: auto; margin-right: auto; }
 .nlcard p.label { color: var(--accent); margin-bottom: 0.35rem; }

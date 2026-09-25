@@ -6,13 +6,13 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>Research · Mikhail Simakhov</title>
-<meta name="description" content="I run them on my own laptop with small open models. My paper drafts are unreviewed and not published.">
+<meta name="description" content="They run on my own laptop with small open models. One paper is under review and the other is a draft.">
 <link rel="canonical" href="https://msimakhov-star.github.io/research/">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F2EF">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#17130F">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Research by Mikhail Simakhov">
-<meta property="og:description" content="I run them on my own laptop with small open models. My paper drafts are unreviewed and not published.">
+<meta property="og:description" content="They run on my own laptop with small open models. One paper is under review and the other is a draft.">
 <meta property="og:url" content="https://msimakhov-star.github.io/research/">
 <meta property="og:site_name" content="Mikhail Simakhov">
 <meta property="og:locale" content="en_US">
@@ -54,7 +54,26 @@
   <div class="wrap-wide">
     <p class="kicker">Research</p>
     <h1>Small experiments on how language models are tested.</h1>
-    <p class="sub">I run them on my own laptop with small open models. My paper drafts are unreviewed and not published.</p>
+    <p class="sub">They run on my own laptop with small open models. One paper is under review and the other is a draft.</p>
+    <div class="nl-grid">
+      <article class="card nlcard" id="paper-screen">
+        <p class="label">Paper &middot; submitted &middot; under review</p>
+        <h3>A pre-flight screen for shutdown-resistance evaluations</h3>
+        <p>The paper proposes a three-part check to run before a shutdown-resistance experiment, made of a comprehension check, a behavioural floor and a custodial control. The check shows whether a no-effect result from a model can be read. It was tested on six small open models from five model families, run locally, with 4,800 trials and 594 comprehension probes. No model passed the whole screen, so the thresholds are not calibrated yet. The paper does not claim a framing effect in either direction. I submitted the work to a peer-reviewed machine learning conference. The decision arrives in December 2026. The starting idea is mine. AI assistants proposed the testable design, the thresholds and the three-part screen, AI coding tools wrote and ran the harness and did the analysis, and an AI language model drafted the text.</p>
+      </article>
+      <article class="card nlcard" id="paper-review">
+        <p class="label">Paper &middot; draft</p>
+        <h3>Manipulation-Check Reporting in LLM Shutdown-Resistance Evaluations: A Systematic Review</h3>
+        <p>This draft reviews 19 publicly posted shutdown-resistance evaluations of language models from January 2023 to August 2026. None of the 19 reports a formal comprehension check, and none reports a null result. Four of the 19 include a full custodial control, 10 include a partial one, and 5 include none. The coding was done by AI language models and has not been checked by a person yet, and the text was drafted by an AI language model. The work is not submitted and not published.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band centered tinted" id="code">
+  <div class="wrap-wide">
+    <p class="kicker">Code</p>
+    <h2>An open harness for shutdown-resistance experiments.</h2>
     <div class="project-grid single">
       <article class="card pcard" id="shutdown-framing">
         <div class="pimg" aria-hidden="true">
@@ -71,7 +90,7 @@
         <div class="pbody">
           <p class="label">Research &middot; public repo</p>
           <h3>Shutdown-framing</h3>
-          <p>A dependency-free Python harness for shutdown-resistance experiments on language models comes with a three-part pre-flight screen that includes a comprehension check, a behavioural floor and a custodial control to say whether a model can give a readable result at all. I ran six small open models from five lineages locally through Ollama on my laptop and none passed the whole screen so I claim no framing effect. It is a methods result about when a null result cannot be interpreted. The companion tool scenario-check is a single-file validator for the scenario files. I have two paper drafts that are unreviewed and not published.</p>
+          <p>A dependency-free Python harness for shutdown-resistance experiments on language models comes with a three-part pre-flight screen that includes a comprehension check, a behavioural floor and a custodial control to say whether a model can give a readable result at all. Six small open models from five lineages ran locally through Ollama on my laptop. None passed the whole screen, so I claim no framing effect. It is a methods result about when a null result cannot be interpreted. The companion tool scenario-check is a single-file validator for the scenario files.</p>
           <p class="stack">Python, no dependencies &middot; Ollama</p>
           <p><a class="quiet-link accent" href="https://github.com/msimakhov-star/shutdown-framing" rel="noopener">Code on GitHub &rarr;</a></p>
         </div>
@@ -80,7 +99,7 @@
   </div>
 </section>
 
-<section class="band centered tinted" id="experiments">
+<section class="band centered" id="experiments">
   <div class="wrap-wide">
     <p class="kicker">Experiments</p>
     <h2>Two small pilots.</h2>

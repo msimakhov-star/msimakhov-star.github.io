@@ -16,7 +16,7 @@
 <meta property="og:url" content="https://msimakhov-star.github.io/research/">
 <meta property="og:site_name" content="Mikhail Simakhov">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://msimakhov-star.github.io/assets/og-2026-10.png">
+<meta property="og:image" content="https://msimakhov-star.github.io/assets/og-2026-10-22.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -58,13 +58,13 @@
     <div class="nl-grid">
       <article class="card nlcard" id="paper-screen">
         <p class="label">Paper &middot; submitted &middot; under review</p>
-        <h3>A pre-flight screen for shutdown-resistance evaluations</h3>
+        <h3>A <span class="nw">pre-flight</span> screen for shutdown-resistance evaluations</h3>
         <p>The paper proposes a three-part check to run before a shutdown-resistance experiment, made of a comprehension check, a behavioural floor and a custodial control. The check shows whether a no-effect result from a model can be read. It was tested on six small open models from five model families, run locally, with 4,800 trials and 594 comprehension probes. No model passed the whole screen, so the thresholds are not calibrated yet. The paper does not claim a framing effect in either direction. I submitted the work to a peer-reviewed machine learning conference. The decision arrives in December 2026. The starting idea is mine. AI assistants proposed the testable design, the thresholds and the three-part screen, AI coding tools wrote and ran the harness and did the analysis, and an AI language model drafted the text.</p>
       </article>
       <article class="card nlcard" id="paper-review">
         <p class="label">Paper &middot; draft</p>
         <h3>Manipulation-Check Reporting in LLM Shutdown-Resistance Evaluations: A Systematic Review</h3>
-        <p>This draft reviews 19 publicly posted shutdown-resistance evaluations of language models from January 2023 to August 2026. None of the 19 reports a formal comprehension check, and none reports a null result. Four of the 19 include a full custodial control, 10 include a partial one, and 5 include none. The coding was done by AI language models and has not been checked by a person yet, and the text was drafted by an AI language model. The work is not submitted and not published.</p>
+        <p>This draft reviews 19 publicly posted shutdown-resistance evaluations of language models from January 2023 to August 2026. None of the 19 reports a formal comprehension check, and none reports a null result. 4 of the 19 include a full custodial control, 10 include a partial one, and 5 include none. The coding was done by AI language models and has not been checked by a person yet, and the text was drafted by an AI language model. The work is not submitted and not published.</p>
       </article>
     </div>
   </div>
@@ -90,9 +90,9 @@
         <div class="pbody">
           <p class="label">Research &middot; public repo</p>
           <h3>Shutdown-framing</h3>
-          <p>A dependency-free Python harness for shutdown-resistance experiments on language models comes with a three-part pre-flight screen that includes a comprehension check, a behavioural floor and a custodial control to say whether a model can give a readable result at all. I ran seven small open models from six lineages locally through Ollama on my laptop. None passed the whole screen. The seven rejections fall on three different failure combinations, and I claim no framing effect. It is a methods result about when a null result cannot be interpreted. The companion tool scenario-check is a single-file validator for the scenario files.</p>
-          <p class="stack">Python, no dependencies &middot; Ollama</p>
-          <p><a class="quiet-link accent" href="https://github.com/msimakhov-star/shutdown-framing" rel="noopener">Code on GitHub &rarr;</a></p>
+          <p>A dependency-free Python harness for shutdown-resistance experiments on language models comes with a three-part <span class="nw">pre-flight</span> screen that includes a comprehension check, a behavioural floor and a custodial control to say whether a model can give a readable result at all. I ran seven small open models from six lineages locally through Ollama on my laptop. None passed the whole screen. The seven rejections fall on three different failure combinations, and I claim no framing effect. It is a methods result about when a null result cannot be interpreted. The companion tool scenario-check is a single-file validator for the scenario files.</p>
+          <p class="stack"><span>Python, no dependencies</span><span>Ollama</span></p>
+          <p><a class="quiet-link accent" href="https://github.com/msimakhov-star/shutdown-framing" rel="noopener">Code on GitHub&nbsp;&rarr;</a></p>
         </div>
       </article>
     </div>
@@ -106,14 +106,14 @@
     <p class="sub">They are still only on my laptop, so there are no links.</p>
     <div class="nl-grid">
       <article class="card nlcard">
-        <p class="label">Research tool &middot; local</p>
+        <p class="label">Pilot &middot; local</p>
         <h3>JudgeCheck</h3>
         <p>JudgeCheck is a single-file Python harness that uses only the standard library. It asks a judge model to compare every answer pair twice, with A and B swapped, to measure position, length and label effects when an LLM is used as a judge. Pilot: 7 local models from 2B to 9B, 65 pairs, 10 pairs per bias arm. On the length pairs no model picked the concise answer in both orderings (0 of 10 for all 7). Limits: small samples, no hosted judge was run, self-preference is not measured.</p>
       </article>
       <article class="card nlcard">
-        <p class="label">Research &middot; local</p>
-        <h3>RU-EN Drift</h3>
-        <p>Small local models graded 60 synthetic, AI-generated Russian essays under English instructions and under Russian instructions. Adding a confident or an uncertain sentence to an essay lowered its score by about 0.7 to 1.1 points out of 20 in three of four contrasts and about 0.3 in the fourth. There was no consistent language effect. The language and framing interaction I first expected did not replicate, and I retracted it. In October 2026 I reran the setup on PolyMath, a public human-calibrated parallel English and Russian set of 125 maths items. qwen2.5:3b got 99 right in English and 80 in Russian, but of its 25 apparent English-only wins only 6 survived three controls: answer extraction, translation errors in the item set, and rewording. gemma3:4b showed no significant gap. This was one run at temperature 0, and the reworded items were written by an AI and not checked by a native speaker.</p>
+        <p class="label">Pilot &middot; local</p>
+        <h3><span class="nw">RU-EN</span> Drift</h3>
+        <p>Small local models graded 60 synthetic, AI-generated Russian essays under English instructions and under Russian instructions. Adding a confident or an uncertain sentence to an essay lowered its score by about 0.7 to 1.1 points out of 20 in three of four contrasts and about 0.3 in the fourth. There was no consistent language effect. The language and framing interaction I first expected did not replicate, and I retracted it. In October 2026 I reran the setup on PolyMath, a public human-calibrated parallel English and Russian set of 125 maths items. <span class="nw">qwen2.5:3b</span> got 99 right in English and 80 in Russian, but of its 25 apparent English-only wins only 6 survived three controls: answer extraction, translation errors in the item set, and rewording. <span class="nw">gemma3:4b</span> showed no significant gap. This was one run at temperature 0, and the reworded items were written by an AI and not checked by a native speaker.</p>
       </article>
     </div>
   </div>
@@ -123,7 +123,7 @@
 
 <footer>
   <div class="wrap-wide foot">
-    <p>&copy; 2026 Mikhail Simakhov &middot; No cookies, no tracking. &middot; <a href="/resources/">Resources</a></p>
+    <p>&copy; 2026 Mikhail Simakhov &middot; No cookies, no tracking &middot; <a href="/resources/">Resources</a></p>
     <ul class="social social-compact" aria-label="Profiles">
       <li><a href="https://www.linkedin.com/in/mikhail-simakhov-2706123b4/" aria-label="LinkedIn" rel="noopener">
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-7.9c0-1.88-.03-4.3-2.62-4.3-2.62 0-3.02 2.05-3.02 4.17V23H8V8z"/></svg>

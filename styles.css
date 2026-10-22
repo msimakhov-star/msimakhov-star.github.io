@@ -142,7 +142,7 @@ a { color: var(--accent); text-decoration: none; }
 .topnav a { color: var(--muted); font-weight: 500; font-size: 0.95rem; }
 .topnav a:hover { color: var(--ink); }
 .topnav a.active { color: var(--ink); font-weight: 700; }
-@media (max-width: 47rem) {
+@media (max-width: 56rem) {
   .bar { flex-wrap: wrap; row-gap: 0.25rem; }
   .bar > .btn { margin-left: auto; }
   .topbar { position: static; }
@@ -253,7 +253,13 @@ h1 {
   .hero { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.5rem; padding-bottom: 3rem; }
   .hero-photo { order: -1; }
   .hero-photo img { width: 168px; margin: 0; }
-  .stats { gap: 1.5rem; }
+  .stats { gap: 1.25rem; max-width: none; }
+  .stat { flex: 1 1 0; min-width: 0; }
+  .stat + .stat { padding-left: 1.25rem; }
+}
+@media (max-width: 24rem) {
+  .stats { flex-direction: column; gap: 0.9rem; }
+  .stat + .stat { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 0.9rem; }
 }
 
 /* ---------- section bands (border-t rhythm like the reference) ---------- */

@@ -53,18 +53,18 @@
 <section class="band centered" id="research">
   <div class="wrap-wide">
     <p class="kicker">Research</p>
-    <h1>Small experiments on how language models are tested.</h1>
-    <p class="sub">They run on my own laptop with small open models. One paper is under review and the other is a draft.</p>
+    <h1>AI Safety and Model Research.</h1>
+    <p class="sub">I study how AI models are tested and whether test results can be trusted. All research runs on small <span class="nw">open-source</span> models on my own laptop.</p>
     <div class="nl-grid">
       <article class="card nlcard" id="paper-screen">
         <p class="label">Paper &middot; submitted &middot; under review</p>
-        <h3>A <span class="nw">pre-flight</span> screen for shutdown-resistance evaluations</h3>
-        <p>The paper proposes a three-part check to run before a shutdown-resistance experiment, made of a comprehension check, a behavioural floor and a custodial control. The check shows whether a no-effect result from a model can be read. It was tested on six small open models from five model families, run locally, with 4,800 trials and 594 comprehension probes. No model passed the whole screen, so the thresholds are not calibrated yet. The paper does not claim a framing effect in either direction. I submitted the work to a peer-reviewed machine learning conference. The decision arrives in December 2026. The starting idea is mine. AI assistants proposed the testable design, the thresholds and the three-part screen, AI coding tools wrote and ran the harness and did the analysis, and an AI language model drafted the text.</p>
+        <h3>A pre-flight screen for shutdown-resistance evaluations</h3>
+        <p>I built a three-part check to run before a shutdown test. No model of the seven passed, so their results could not be trusted. The paper is under double-blind review at a peer-reviewed machine learning conference, with a decision in December 2026.</p>
       </article>
       <article class="card nlcard" id="paper-review">
         <p class="label">Paper &middot; draft</p>
         <h3>Manipulation-Check Reporting in LLM Shutdown-Resistance Evaluations: A Systematic Review</h3>
-        <p>This draft reviews 19 publicly posted shutdown-resistance evaluations of language models from January 2023 to August 2026. None of the 19 reports a formal comprehension check, and none reports a null result. 4 of the 19 include a full custodial control, 10 include a partial one, and 5 include none. The coding was done by AI language models and has not been checked by a person yet, and the text was drafted by an AI language model. The work is not submitted and not published.</p>
+        <p>A draft review of 19 published studies found none checked whether the model understood the scenario. The sorting was done by AI models and has not yet been checked by a person, and the draft is not submitted.</p>
       </article>
     </div>
   </div>
@@ -90,8 +90,7 @@
         <div class="pbody">
           <p class="label">Research &middot; public repo</p>
           <h3>Shutdown-framing</h3>
-          <p>A dependency-free Python harness for shutdown-resistance experiments on language models comes with a three-part <span class="nw">pre-flight</span> screen that includes a comprehension check, a behavioural floor and a custodial control to say whether a model can give a readable result at all. I ran seven small open models from six lineages locally through Ollama on my laptop. None passed the whole screen. The seven rejections fall on three different failure combinations, and I claim no framing effect. It is a methods result about when a null result cannot be interpreted. The companion tool scenario-check is a single-file validator for the scenario files.</p>
-          <p class="stack"><span>Python, no dependencies</span><span>Ollama</span></p>
+          <p>The code for the check is public. AI tools helped design it, write the code and draft the text, and the starting idea is mine.</p>
           <p><a class="quiet-link accent" href="https://github.com/msimakhov-star/shutdown-framing" rel="noopener">Code on GitHub&nbsp;&rarr;</a></p>
         </div>
       </article>
@@ -108,12 +107,12 @@
       <article class="card nlcard">
         <p class="label">Pilot &middot; local</p>
         <h3>JudgeCheck</h3>
-        <p>JudgeCheck is a single-file Python harness that uses only the standard library. It asks a judge model to compare every answer pair twice, with A and B swapped, to measure position, length and label effects when an LLM is used as a judge. Pilot: 7 local models from 2B to 9B, 65 pairs, 10 pairs per bias arm. On the length pairs no model picked the concise answer in both orderings (0 of 10 for all 7). Limits: small samples, no hosted judge was run, self-preference is not measured.</p>
+        <p>JudgeCheck tests if models used as judges are biased by answer order, length or labels. On the length test, no model picked the shorter answer in both orders in a small local pilot.</p>
       </article>
       <article class="card nlcard">
         <p class="label">Pilot &middot; local</p>
-        <h3><span class="nw">RU-EN</span> Drift</h3>
-        <p>Small local models graded 60 synthetic, AI-generated Russian essays under English instructions and under Russian instructions. Adding a confident or an uncertain sentence to an essay lowered its score by about 0.7 to 1.1 points out of 20 in three of four contrasts and about 0.3 in the fourth. There was no consistent language effect. The language and framing interaction I first expected did not replicate, and I retracted it. In October 2026 I reran the setup on PolyMath, a public human-calibrated parallel English and Russian set of 125 maths items. <span class="nw">qwen2.5:3b</span> got 99 right in English and 80 in Russian, but of its 25 apparent English-only wins only 6 survived three controls: answer extraction, translation errors in the item set, and rewording. <span class="nw">gemma3:4b</span> showed no significant gap. This was one run at temperature 0, and the reworded items were written by an AI and not checked by a native speaker.</p>
+        <h3>RU-EN Drift</h3>
+        <p>I compare how small AI models perform on the same maths problems in Russian and English. In the October rerun, one model looked much stronger in English, but only 6 of its 25 apparent wins held up after three checks. Another model showed no real gap.</p>
       </article>
     </div>
   </div>

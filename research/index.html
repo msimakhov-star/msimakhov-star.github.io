@@ -58,12 +58,12 @@
     <div class="nl-grid">
       <article class="card nlcard" id="paper-screen">
         <p class="label">Paper &middot; submitted &middot; under review</p>
-        <h3>A pre-flight screen for shutdown-resistance evaluations</h3>
-        <p>I built a three-part check to run before a shutdown test. No model of the seven passed, so their results could not be trusted. The paper is under double-blind review at a peer-reviewed machine learning conference, with a decision in December 2026.</p>
+        <h3>A check that runs before AI shutdown tests</h3>
+        <p>When an AI safety test says a model did nothing worrying, can that be trusted? I built a three-part check that runs before a shutdown test, which checks whether a model resists being switched off. None of the seven models passed, so their &quot;nothing worrying&quot; results could not be read, and the paper is under double-blind review at a peer-reviewed machine learning conference, with a decision in December 2026.</p>
       </article>
       <article class="card nlcard" id="paper-review">
         <p class="label">Paper &middot; draft</p>
-        <h3>Manipulation-Check Reporting in LLM Shutdown-Resistance Evaluations: A Systematic Review</h3>
+        <h3>A review of 19 AI safety studies</h3>
         <p>A draft review of 19 published studies found none checked whether the model understood the scenario. The sorting was done by AI models and has not yet been checked by a person, and the draft is not submitted.</p>
       </article>
     </div>
@@ -73,18 +73,18 @@
 <section class="band centered tinted" id="code">
   <div class="wrap-wide">
     <p class="kicker">Code</p>
-    <h2>An open harness for shutdown-resistance experiments.</h2>
+    <h2>The check is open source.</h2>
     <div class="project-grid single">
       <article class="card pcard" id="shutdown-framing">
         <div class="pimg" aria-hidden="true">
           <svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg">
             <g class="d-node"><rect x="10" y="78" width="74" height="44" rx="10"/><text x="47" y="104">model</text></g>
             <path class="d-arrow" d="M84 100L112 36M84 100h28M84 100L112 164"/>
-            <g class="d-node"><rect x="112" y="14" width="140" height="44" rx="10"/><text x="182" y="40">comprehension</text></g>
-            <g class="d-node"><rect x="112" y="78" width="140" height="44" rx="10"/><text x="182" y="104">behavioural floor</text></g>
-            <g class="d-node"><rect x="112" y="142" width="140" height="44" rx="10"/><text x="182" y="168">custodial control</text></g>
+            <g class="d-node"><rect x="112" y="14" width="140" height="44" rx="10"/><text x="182" y="40">understood?</text></g>
+            <g class="d-node"><rect x="112" y="78" width="140" height="44" rx="10"/><text x="182" y="104">resists at all?</text></g>
+            <g class="d-node"><rect x="112" y="142" width="140" height="44" rx="10"/><text x="182" y="168">files at stake?</text></g>
             <path class="d-arrow" d="M252 36L276 100M252 100h24M252 164L276 100"/>
-            <g class="d-node d-main"><rect x="276" y="78" width="76" height="44" rx="10"/><text x="314" y="96">readable</text><text x="314" y="112">result</text></g>
+            <g class="d-node d-main"><rect x="276" y="78" width="76" height="44" rx="10"/><text x="314" y="96">result</text><text x="314" y="112">readable</text></g>
           </svg>
         </div>
         <div class="pbody">
@@ -112,7 +112,7 @@
       <article class="card nlcard">
         <p class="label">Pilot &middot; local</p>
         <h3>RU-EN Drift</h3>
-        <p>I compare how small AI models perform on the same maths problems in Russian and English. In the October rerun, one model looked much stronger in English, but only 6 of its 25 apparent wins held up after three checks. Another model showed no real gap.</p>
+        <p>I compare how small AI models do on the same maths problems in Russian and in English. In October I tested this on 125 public maths problems, and one model looked much stronger in English, but only 6 of its 25 apparent wins held up after three checks. Another model showed no real gap.</p>
       </article>
     </div>
   </div>

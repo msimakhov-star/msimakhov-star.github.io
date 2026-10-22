@@ -16,7 +16,7 @@
 <meta property="og:url" content="https://msimakhov-star.github.io/projects/">
 <meta property="og:site_name" content="Mikhail Simakhov">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://msimakhov-star.github.io/assets/og-2026-09.png">
+<meta property="og:image" content="https://msimakhov-star.github.io/assets/og-2026-10.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -53,8 +53,8 @@
 <section class="band centered" id="hackathons">
   <div class="wrap-wide">
     <p class="kicker">Hackathons</p>
-    <h1>Two one-day hackathon builds.</h1>
-    <p class="sub">Both projects have public repositories. I build with Claude Code, an AI coding tool that writes the code at my direction.</p>
+    <h1>Four hackathon builds.</h1>
+    <p class="sub" id="hack-intro">All four have public repositories. I build with Claude Code, an AI coding tool that writes the code at my direction; Photo-to-Physics was built with GPT-6 Astra, Codex and Lovable.</p>
     <div class="project-grid">
       <article class="card pcard" id="opendoor">
         <div class="pimg" aria-hidden="true">
@@ -71,11 +71,59 @@
           </svg>
         </div>
         <div class="pbody">
-          <p class="label">{Tech: Europe} Agentic AI Hack &middot; 19 Sep 2026</p>
+          <p class="label">{Tech: Europe} Agentic AI Hack &middot; 19 Sep 2026 &middot; built solo</p>
           <h3>Open Door</h3>
-          <p>Open Door is an agent that reads GP surgery registration pages across London and maps which surgeries ask new patients for documents that nhs.uk says are not needed. It quotes the surgery's own sentence only after code confirms the sentence is word for word on the page, and a separate defence agent must agree before a page stays red. One all-London run took 382 seconds, found 1,156 practices, loaded 877 pages, and marked 68 red. All verdicts are AI readings of website wording, with no human review. The interface shows a drafted letter only for red surgeries and a person decides whether to send it without anything being sent automatically. It replays offline from frozen runs with no API keys. The live pipeline has not been verified again.</p>
+          <p>Open Door is an agent that reads GP surgery registration pages across London and maps which surgeries ask new patients for documents that nhs.uk says are not needed. It quotes the surgery's own sentence only after code confirms the sentence is word for word on the page, and a separate defence agent must agree before a page stays red. One all-London run took 382 seconds, found 1,156 practices, loaded 877 pages, and marked 68 red. All verdicts are AI readings of website wording, with no human review. The interface shows a drafted letter only for red surgeries and a person decides whether to send it without anything being sent automatically. It replays offline from frozen runs with no API keys. The live pipeline has not been verified again. On 28 September 2026 the organisers wrote that Open Door took first place in the Pydantic side challenge.</p>
           <p class="stack">Python &middot; Modal &middot; Playwright &middot; Pydantic AI &middot; Gemini &middot; FastAPI &middot; Leaflet</p>
           <p><a class="quiet-link accent" href="https://github.com/msimakhov-star/opendoor" rel="noopener">Code on GitHub &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card pcard" id="photo-to-physics">
+        <div class="pimg" aria-hidden="true">
+          <svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg">
+            <g class="d-node"><rect x="16" y="30" width="104" height="44" rx="10"/><text x="68" y="48">photo of a</text><text x="68" y="64">physics problem</text></g>
+            <path class="d-arrow" d="M120 52h24"/>
+            <g class="d-node"><rect x="144" y="30" width="104" height="44" rx="10"/><text x="196" y="48">model writes</text><text x="196" y="64">experiment</text></g>
+            <path class="d-arrow" d="M248 52h24"/>
+            <g class="d-node"><rect x="272" y="30" width="76" height="44" rx="10"/><text x="310" y="48">runs in a</text><text x="310" y="64">sandbox</text></g>
+            <path class="d-arrow" d="M310 74v20"/>
+            <g class="d-node d-main"><rect x="200" y="94" width="148" height="44" rx="10"/><text x="274" y="112">code checks it</text><text x="274" y="128">against the formula</text></g>
+            <path class="d-arrow" d="M200 116h-30"/>
+            <g class="d-node"><rect x="16" y="94" width="154" height="44" rx="10"/><text x="93" y="112">mismatch: error</text><text x="93" y="128">goes back, 3 rounds</text></g>
+            <path class="d-arrow" d="M274 138v14"/>
+            <g class="d-node"><rect x="200" y="152" width="148" height="40" rx="10"/><text x="274" y="176">match within 2%</text></g>
+          </svg>
+        </div>
+        <div class="pbody">
+          <p class="label">GPT-6 Astra Hackathon, London &middot; 6 Oct 2026</p>
+          <h3>Photo-to-Physics</h3>
+          <p>A student photographs a physics problem or describes an experiment in words. GPT-6 Astra reads it and writes a live interactive experiment that runs in the browser, inside a sandboxed frame. The app checks the experiment against the textbook formula with deterministic code. If they disagree, the model gets the measured error back and fixes its simulation, for up to three rounds. I built this in one day with GPT-6 Astra, Codex and Lovable. It only covers three topics: projectile motion, simple pendulum, and a block on an incline.</p>
+          <p class="stack">GPT-6 Astra &middot; Codex &middot; Lovable &middot; TanStack Start &middot; Tailwind &middot; sandboxed iframe</p>
+          <p><a class="quiet-link accent" href="https://github.com/msimakhov-star/pixel-perfect-replica" rel="noopener">Code on GitHub &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="card pcard" id="rental-housing">
+        <div class="pimg" aria-hidden="true">
+          <svg viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg">
+            <g class="d-node"><rect x="16" y="30" width="120" height="44" rx="10"/><text x="76" y="48">address</text><text x="76" y="64">+ date</text></g>
+            <path class="d-arrow" d="M136 52h28"/>
+            <g class="d-node"><rect x="164" y="30" width="120" height="44" rx="10"/><text x="224" y="48">find the</text><text x="224" y="64">legal city</text></g>
+            <path class="d-arrow" d="M224 74v20"/>
+            <g class="d-node d-main"><rect x="164" y="94" width="120" height="44" rx="10"/><text x="224" y="112">test each rule</text><text x="224" y="128">yes / no / unknown</text></g>
+            <path class="d-arrow" d="M164 116h-28"/>
+            <g class="d-node"><rect x="16" y="94" width="120" height="44" rx="10"/><text x="76" y="112">local rule can</text><text x="76" y="128">supersede state</text></g>
+            <path class="d-arrow" d="M224 138v14"/>
+            <g class="d-node"><rect x="120" y="152" width="208" height="40" rx="10"/><text x="224" y="176">quoted source sentence, word for word</text></g>
+          </svg>
+        </div>
+        <div class="pbody">
+          <p class="label">Hack-Nation x RealPage &middot; online &middot; 4 Oct 2026</p>
+          <h3>Rental Housing Law Navigator</h3>
+          <p>A user types an address and a date to see which rental housing rules apply. The system covers 3 US states, 10 cities, and 6 rule categories. Each rule check ends as yes, no or unknown, with the source sentence quoted word for word and a plain explanation in English and Spanish. Results for 500 sample addresses were generated as of 1 October 2026. 30.9 percent of results are unknown. No human or lawyer reviewed the tool, and the rule extraction was run by Claude Code agents. This is not legal advice.</p>
+          <p class="stack">Python, standard library only &middot; static web demo</p>
+          <p><a class="quiet-link accent" href="https://github.com/msimakhov-star/rental-housing-law-navigator" rel="noopener">Code on GitHub &rarr;</a></p>
         </div>
       </article>
 

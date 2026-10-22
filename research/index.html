@@ -16,7 +16,7 @@
 <meta property="og:url" content="https://msimakhov-star.github.io/research/">
 <meta property="og:site_name" content="Mikhail Simakhov">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://msimakhov-star.github.io/assets/og-2026-09.png">
+<meta property="og:image" content="https://msimakhov-star.github.io/assets/og-2026-10.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -90,7 +90,7 @@
         <div class="pbody">
           <p class="label">Research &middot; public repo</p>
           <h3>Shutdown-framing</h3>
-          <p>A dependency-free Python harness for shutdown-resistance experiments on language models comes with a three-part pre-flight screen that includes a comprehension check, a behavioural floor and a custodial control to say whether a model can give a readable result at all. Six small open models from five lineages ran locally through Ollama on my laptop. None passed the whole screen, so I claim no framing effect. It is a methods result about when a null result cannot be interpreted. The companion tool scenario-check is a single-file validator for the scenario files.</p>
+          <p>A dependency-free Python harness for shutdown-resistance experiments on language models comes with a three-part pre-flight screen that includes a comprehension check, a behavioural floor and a custodial control to say whether a model can give a readable result at all. I ran seven small open models from six lineages locally through Ollama on my laptop. None passed the whole screen. The seven rejections fall on three different failure combinations, and I claim no framing effect. It is a methods result about when a null result cannot be interpreted. The companion tool scenario-check is a single-file validator for the scenario files.</p>
           <p class="stack">Python, no dependencies &middot; Ollama</p>
           <p><a class="quiet-link accent" href="https://github.com/msimakhov-star/shutdown-framing" rel="noopener">Code on GitHub &rarr;</a></p>
         </div>
@@ -113,7 +113,7 @@
       <article class="card nlcard">
         <p class="label">Research &middot; local</p>
         <h3>RU-EN Drift</h3>
-        <p>Small local models graded 60 synthetic, AI-generated Russian essays under English instructions and under Russian instructions. Adding a confident or an uncertain sentence to an essay lowered its score by about 0.7 to 1.1 points out of 20 in three of four contrasts and about 0.3 in the fourth. There was no consistent language effect. The language and framing interaction I first expected did not replicate, and I retracted it.</p>
+        <p>Small local models graded 60 synthetic, AI-generated Russian essays under English instructions and under Russian instructions. Adding a confident or an uncertain sentence to an essay lowered its score by about 0.7 to 1.1 points out of 20 in three of four contrasts and about 0.3 in the fourth. There was no consistent language effect. The language and framing interaction I first expected did not replicate, and I retracted it. In October 2026 I reran the setup on PolyMath, a public human-calibrated parallel English and Russian set of 125 maths items. qwen2.5:3b got 99 right in English and 80 in Russian, but of its 25 apparent English-only wins, 5 went to answer extraction, 3 to Russian mistranslations in the item set, and 12 to wording. Only 6 survived all three controls. gemma3:4b showed no significant gap. This was one run at temperature 0, and the reworded items were written by an AI and not checked by a native speaker.</p>
       </article>
     </div>
   </div>
